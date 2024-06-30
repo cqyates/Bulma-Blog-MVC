@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const homeRoutes = require("./open");
-const dashboardRoutes = reqiuire("./closed.js");
+const homeRoutes = require("./open.js");
+const dashboardRoutes = require("./closed.js");
 
 router.use("/", homeRoutes);
 router.use("/dashboard", dashboardRoutes)
