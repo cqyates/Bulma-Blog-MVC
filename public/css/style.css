@@ -1,0 +1,6 @@
+#nav-title {
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(28, 175, 201), rgb(72, 59, 132));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

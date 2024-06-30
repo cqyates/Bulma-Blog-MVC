@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
-  res.render("landing", {loggedIn: false})
+  res.render("landing", {loggedIn: false, layout: "main"})
 });
 router.get('/all', (req, res) => {
   res.render("all-posts", {loggedIn: false})

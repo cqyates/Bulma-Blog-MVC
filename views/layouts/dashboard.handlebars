@@ -8,29 +8,26 @@
       href=' https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css '
       rel='stylesheet'
     />
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel='stylesheet' href='/css/style.css' />
   </head>
 
   <body>
-    <nav class='navbar' style="border-bottom: 1px solid white">
+    <nav class='navbar' style='border-bottom: 1px solid white'>
       <div class='navbar-brand'>
-        <a href='/all'>
-          <h1 class='title is-large is-inverted' id="nav-title">Bulma Photo Blog</h1>
-          <h2 class="subtitle is-medium">Your Life in Pictures</h2>
+        <a href='/my-posts'>
+          <h1 class='title is-large is-inverted' id='nav-title'>Your Life in
+            Pictures</h1>
         </a>
       </div>
-      <ul class='navar-menu navbar-end' style="padding-bottom: 3em">
+      <ul class='navar-menu navbar-end' style='padding-bottom: 3em'>
 
         <li class='navbar-item'>
-          <a href='/dashboard/my-posts'>
-            Dashboard
+          <a href='/all-posts'>
+            Feed
           </a>
         </li>
-        {{#if loggedIn}}
-          <li class='navbar-item button'><a href='#' id='logout'>Logout</a></li>
-        {{else}}
-          <li class='navbar-item button'><a href='/login'>Login</a></li>
-        {{/if}}
+
+        <li class='navbar-item button'><a href='#' id='logout'>Logout</a></li>
 
       </ul>
 
