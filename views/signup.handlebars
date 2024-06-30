@@ -1,3 +1,28 @@
-<section>
-  <h2>Signup Page Here</h2>
-</section>
+<div class='card' style='max-width: 450px; margin: 0 auto; padding: 1rem'>
+  <div class='card-header'>
+    <h2 class='title is-medium' style='padding-bottom: 1rem'>Sign Up</h2>
+  </div>
+  <div id='signup'>
+    <form id='signup-form' class='card-body'>
+      <div style='padding-bottom: 1rem'>
+        <label for='username-input-signup' class='form-label' style="margin-right: 1rem">Username</label>
+        <input type='text' id='username-input-signup' class="input"/>
+      </div>
+      <div style='padding-bottom: 1rem'>
+        <label for='email-input-signup' class='form-label' style="margin-right: 1rem">Email</label>
+        <input type='text' id='email-input-signup' class="input"/>
+      </div>
+      <div style='padding-bottom: 1rem'>
+        <label for='password-input-signup' class='form-label' style="margin-right: 1rem">Password</label>
+        <input type='password' id='password-input-signup' class="input" />
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <button type='submit' id='signup-btn' class='button is-primary' style="margin: 1rem 0 1rem 0">Signup!</button>
+        <h3>Already Have An Account?</h3>
+        <a class='link' href='/login'>Login</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src='/js/signup.js'></script>
