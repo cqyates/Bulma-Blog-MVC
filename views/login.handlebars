@@ -1,3 +1,24 @@
-<section>
-  <h2>Login Page Here</h2>
-</section>
+<div class='card' style='max-width: 450px; margin: 0 auto; padding: 1rem'>
+  <div class='card-header'>
+    <h2 class='title is-medium' style='padding-bottom: 1rem'>Login</h2>
+  </div>
+  <div id='login'>
+    <form id='login-form' class='card-body'>
+      <div style='padding-bottom: 1rem'>
+        <label for='email-input-login' class='form-label' style="margin-right: 1rem">Email</label>
+        <input type='text' id='email-input-login' class="input"/>
+      </div>
+      <div style='padding-bottom: 1rem'>
+        <label for='password-input-login' class='form-label' style="margin-right: 1rem">Password</label>
+        <input type='password' id='password-input-login' class="input" />
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <button type='submit' id='login-btn' class='button is-primary' style="margin: 1rem 0 1rem 0">Login!</button>
+        <h3>Don't Have an Account?</h3>
+        <a class='link' href='/signup'>Create Account</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src='/js/signup.js'></script>
