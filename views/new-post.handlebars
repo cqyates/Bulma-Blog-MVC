@@ -1,0 +1,50 @@
+<div class='card' style='max-width: 450px; margin: 1rem auto; padding: 1rem'>
+  <div class='card-header'>
+    <h2 class='title is-medium' style='padding-bottom: 1rem'>Create a Post</h2>
+  </div>
+  <div id='new-post'>
+    <form id='new-post-form' class='card-body'>
+      <div style='padding-bottom: 1rem'>
+        <label
+          for='title-input-post'
+          class='form-label'
+          style='margin-right: 1rem'
+        >Title</label>
+        <input type='text' id='title-input-post' class='input' />
+      </div>
+      <div style='padding-bottom: 1rem'>
+        <label
+          for='body-input-post'
+          class='form-label'
+          style='display:none'
+        ></label>
+        <textarea type='text' id='body-input-post' class='textarea'></textarea>
+      </div>
+      <div class='file has-name'>
+        <label class='file-label'>
+          <input class='file-input' type='file' name='resume' />
+          <span class='file-cta'>
+            <span class='file-icon'>
+              <i class='fas fa-upload'></i>
+            </span>
+            <span class='file-label'> Choose a file… </span>
+          </span>
+          <span class='file-name'>
+           THIS IS A PLACEHOLDER
+          </span>
+        </label>
+      </div>
+
+      <div style='display: flex; flex-direction: column'>
+        <button
+          type='submit'
+          id='post-btn'
+          class='button is-primary'
+          style='margin: 1rem 0 1rem 0'
+        >Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src='/js/add-post.js'></script>
