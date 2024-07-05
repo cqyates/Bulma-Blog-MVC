@@ -19,6 +19,16 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    type: {
+      type: DataTypes.STRING,
+    },
+    name: {
+      type: DataTypes.STRING,
+    },
+    data: {
+      type: DataTypes.BLOB("long"),
+      allowNull: false,
+    },
   },
   {
     sequelize,
